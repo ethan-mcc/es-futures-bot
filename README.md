@@ -32,7 +32,8 @@ Training time on RTX 3080 > 30 < 45 minutes
 4. Allow WSL 2 to use Docker Desktop:
     ```
     sudo chmod 666 /var/run/docker.sock
-    ```    
+    ```
+    Restart Docker Desktop
 5. Run Docker Compose:
     ```
     docker-compose up 
