@@ -38,10 +38,13 @@ Training time on RTX 3080 > 30 < 45 minutes
     ```
     docker-compose up 
     ```
+   docker pull rapidsai/rapidsai:23.06-cuda11.8-runtime-ubuntu22.04-py3.10
     ```
-    $ docker pull rapidsai/rapidsai:23.06-cuda11.8-runtime-ubuntu22.04-py3.10
-$ docker run --gpus all --rm -it -p 8888:8888 -p 8787:8787 -p 8786:8786 \
+    ```
+    docker run --gpus all --rm -it -p 8888:8888 -p 8787:8787 -p 8786:8786 \
          rapidsai/rapidsai:23.06-cuda11.8-runtime-ubuntu22.04-py3.10
+    ```
+
     ```
 6. Access the JupyterLab at:
     ```
